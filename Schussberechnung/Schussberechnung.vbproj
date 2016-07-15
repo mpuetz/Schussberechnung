@@ -138,6 +138,12 @@
     <Compile Include="Changelog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forum.Designer.vb">
+      <DependentUpon>Forum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forum.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Help.Designer.vb">
       <DependentUpon>Help.vb</DependentUpon>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.de-DE.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forum.resx">
+      <DependentUpon>Forum.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Help.de-DE.resx">
       <DependentUpon>Help.vb</DependentUpon>

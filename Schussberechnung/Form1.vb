@@ -231,8 +231,7 @@ LastLine:
 
     Private Sub ReportABugToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportABugToolStripMenuItem.Click
         ' Shows a window, which desplays a website containing the bug-report-program.
-        BugReport.Show()
-        Me.Hide()
+        BugReport.ShowDialog()
     End Sub
 
     Private Sub ÜberToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ÜberToolStripMenuItem.Click
@@ -241,13 +240,15 @@ LastLine:
 
     Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
         ' Shows a window, which desplays a website containing the wiki-entry.
-        Help.Show()
-        Me.Hide()
+        Help.ShowDialog()
     End Sub
 
     Private Sub ChangelogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangelogToolStripMenuItem.Click
         ' Shows a window, which desplays a website containing the bug-report-program, showing the changelogs.
-        Changelog.Show()
-        Me.Hide()
+        Changelog.ShowDialog()
+    End Sub
+
+    Private Sub ForumToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ForumToolStripMenuItem.Click
+        Forum.ShowDialog()
     End Sub
 End Class

@@ -20,9 +20,6 @@ Imports System.Resources
 
 Public Class BugReport
     Private LocRM As New ResourceManager("Schussberechnung.Resources", GetType(BugReport).Assembly)
-    Private Sub BugReport_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Form1.Show()
-    End Sub
 
     Private Sub BugReport_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MsgBox(LocRM.GetString("strBugReport"), MsgBoxStyle.Information, "Hinweis")

@@ -33,6 +33,7 @@ Partial Class Form1
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ÜberToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangelogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -84,6 +85,7 @@ Partial Class Form1
         Me.HelpProvider1.SetHelpKeyword(Me.MenuStrip1, resources.GetString("MenuStrip1.HelpKeyword"))
         Me.HelpProvider1.SetHelpNavigator(Me.MenuStrip1, CType(resources.GetObject("MenuStrip1.HelpNavigator"), System.Windows.Forms.HelpNavigator))
         Me.HelpProvider1.SetHelpString(Me.MenuStrip1, resources.GetString("MenuStrip1.HelpString"))
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpToolStripMenuItem, Me.ReportABugToolStripMenuItem, Me.ToolStripMenuItem1})
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.HelpProvider1.SetShowHelp(Me.MenuStrip1, CType(resources.GetObject("MenuStrip1.ShowHelp"), Boolean))
@@ -101,7 +103,7 @@ Partial Class Form1
         'ToolStripMenuItem1
         '
         resources.ApplyResources(Me.ToolStripMenuItem1, "ToolStripMenuItem1")
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ÜberToolStripMenuItem, Me.ChangelogToolStripMenuItem})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ÜberToolStripMenuItem, Me.ChangelogToolStripMenuItem, Me.ForumToolStripMenuItem})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         '
         'ÜberToolStripMenuItem
@@ -113,6 +115,11 @@ Partial Class Form1
         '
         resources.ApplyResources(Me.ChangelogToolStripMenuItem, "ChangelogToolStripMenuItem")
         Me.ChangelogToolStripMenuItem.Name = "ChangelogToolStripMenuItem"
+        '
+        'ForumToolStripMenuItem
+        '
+        resources.ApplyResources(Me.ForumToolStripMenuItem, "ForumToolStripMenuItem")
+        Me.ForumToolStripMenuItem.Name = "ForumToolStripMenuItem"
         '
         'HelpProvider1
         '
@@ -150,5 +157,5 @@ Partial Class Form1
     Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ÜberToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ChangelogToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-
+    Friend WithEvents ForumToolStripMenuItem As ToolStripMenuItem
 End Class
