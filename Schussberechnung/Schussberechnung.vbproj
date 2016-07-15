@@ -21,7 +21,7 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
-    <PublishUrl>E:\Users\Michael\Documents\Visual Studio 2013\Projects\Schussberechnung\Schussberechnung\publish\</PublishUrl>
+    <PublishUrl>D:\Users\Michael\Documents\Visual Studio 2013\Projects\Schussberechnung\Schussberechnung\publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -39,7 +39,7 @@
     <MinimumRequiredVersion>1.0.0.10</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>index.html</WebPage>
-    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationRevision>14</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -138,6 +138,12 @@
     <Compile Include="Changelog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forum.Designer.vb">
+      <DependentUpon>Forum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forum.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Help.Designer.vb">
       <DependentUpon>Help.vb</DependentUpon>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.de-DE.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forum.resx">
+      <DependentUpon>Forum.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Help.de-DE.resx">
       <DependentUpon>Help.vb</DependentUpon>

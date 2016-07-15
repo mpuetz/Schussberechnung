@@ -21,9 +21,6 @@ Imports System.Resources
 
 Public Class Help
     Private LocRM As New ResourceManager("Schussberechnung.Resources", GetType(Help).Assembly)
-    Private Sub Help_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Form1.Show()
-    End Sub
 
     Private Sub Help_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MsgBox(LocRM.GetString("strHelp"), MsgBoxStyle.Information, "Hinweis")

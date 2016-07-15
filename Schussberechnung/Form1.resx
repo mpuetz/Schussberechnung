@@ -117,10 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CheckBox1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>382, 199</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MenuStrip1.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -149,18 +150,17 @@
   <data name="&gt;&gt;Button1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 8, 6, 8</value>
   </data>
   <data name="&gt;&gt;ReportABugToolStripMenuItem.Name" xml:space="preserve">
     <value>ReportABugToolStripMenuItem</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="TBErg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 20</value>
+    <value>310, 26</value>
   </data>
   <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 60</value>
+    <value>218, 92</value>
   </data>
   <data name="CheckBox1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -171,11 +171,17 @@
   <data name="Button1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
+  <data name="&gt;&gt;TBErg.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>9, 20</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="ForumToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Forum</value>
   </data>
   <data name="CheckBox1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -199,7 +205,7 @@
     <value>Reset</value>
   </data>
   <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 24</value>
+    <value>348, 35</value>
   </data>
   <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Help</value>
@@ -216,13 +222,13 @@
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;TBErg.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="CheckBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 24</value>
+  </data>
+  <data name="CheckBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;ReportABugToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;HelpToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ToolStripMenuItem1.Name" xml:space="preserve">
@@ -237,6 +243,9 @@
   <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 3, 0, 3</value>
+  </data>
   <data name="&gt;&gt;HelpProvider1.Name" xml:space="preserve">
     <value>HelpProvider1</value>
   </data>
@@ -245,6 +254,9 @@
   </data>
   <data name="Label1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
+  </data>
+  <data name="CheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -264,8 +276,11 @@
   <data name="&gt;&gt;ToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;ForumToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+    <value>61, 29</value>
   </data>
   <data name="Button1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
@@ -288,11 +303,14 @@
   <data name="MenuStrip1.Text" xml:space="preserve">
     <value>MenuStrip1</value>
   </data>
-  <data name="&gt;&gt;ÜberToolStripMenuItem.Name" xml:space="preserve">
-    <value>ÜberToolStripMenuItem</value>
+  <data name="ForumToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 30</value>
   </data>
   <data name="&gt;&gt;CheckBox1.Name" xml:space="preserve">
     <value>CheckBox1</value>
+  </data>
+  <data name="Button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="&gt;&gt;HelpToolStripMenuItem.Name" xml:space="preserve">
     <value>HelpToolStripMenuItem</value>
@@ -301,13 +319,13 @@
     <value>0, 0</value>
   </data>
   <data name="TBErg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 40</value>
+    <value>18, 62</value>
   </data>
   <data name="CheckBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 66</value>
+    <value>18, 102</value>
   </data>
-  <data name="CheckBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 17</value>
+  <data name="&gt;&gt;HelpToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -400,11 +418,14 @@
   <data name="ToolStripMenuItem1.Text" xml:space="preserve">
     <value>&amp;?</value>
   </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
   <data name="$this.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="ReportABugToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 20</value>
+    <value>128, 29</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Result</value>
@@ -415,23 +436,32 @@
   <data name="Label1.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;ForumToolStripMenuItem.Name" xml:space="preserve">
+    <value>ForumToolStripMenuItem</value>
+  </data>
   <data name="TBErg.ShowHelp" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 13</value>
+    <value>55, 20</value>
   </data>
   <data name="ChangelogToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>211, 30</value>
   </data>
-  <data name="&gt;&gt;CheckBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ÜberToolStripMenuItem.Name" xml:space="preserve">
+    <value>ÜberToolStripMenuItem</value>
   </data>
   <data name="$this.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
+  <data name="TBErg.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TBErg.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>112, 35</value>
   </data>
   <data name="Button1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -443,13 +473,13 @@
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 24</value>
+    <value>14, 37</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>232, 93</value>
+    <value>348, 143</value>
   </data>
-  <data name="TBErg.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="ChangelogToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Changelog</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -460,11 +490,17 @@
   <data name="MenuStrip1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
+  <data name="&gt;&gt;CheckBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="ÜberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>211, 30</value>
   </data>
   <data name="ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 20</value>
+    <value>32, 29</value>
+  </data>
+  <data name="Label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="MenuStrip1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
