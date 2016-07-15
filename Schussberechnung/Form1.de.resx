@@ -117,9 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TBErg.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TBErg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 62</value>
+  </data>
   <data name="TBErg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 26</value>
+    <value>341, 26</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 20</value>
@@ -127,17 +134,26 @@
   <data name="Label1.Text" xml:space="preserve">
     <value>Ergebnis</value>
   </data>
+  <data name="Button1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
   <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 98</value>
+    <value>0, 129</value>
+  </data>
+  <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 35</value>
   </data>
   <data name="CheckBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 108</value>
+    <value>13, 98</value>
   </data>
   <data name="CheckBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>204, 24</value>
   </data>
   <data name="CheckBox1.Text" xml:space="preserve">
     <value>Schusszahl beibehalten</value>
+  </data>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 35</value>
   </data>
   <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 29</value>
@@ -151,14 +167,20 @@
   <data name="ReportABugToolStripMenuItem.Text" xml:space="preserve">
     <value>Fehle&amp;r melden</value>
   </data>
+  <data name="ÜberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 30</value>
+  </data>
   <data name="ÜberToolStripMenuItem.Text" xml:space="preserve">
     <value>Ü&amp;ber...</value>
   </data>
-  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 35</value>
+  <data name="ChangelogToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 30</value>
+  </data>
+  <data name="ForumToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 30</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>360, 143</value>
+    <value>372, 164</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -236,9 +258,11 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>394, 220</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Ergebnis</value>
