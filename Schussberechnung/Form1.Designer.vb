@@ -35,6 +35,7 @@ Partial Class Form1
         Me.ChangelogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
+        Me.NewsletterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -103,7 +104,7 @@ Partial Class Form1
         'ToolStripMenuItem1
         '
         resources.ApplyResources(Me.ToolStripMenuItem1, "ToolStripMenuItem1")
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ÜberToolStripMenuItem, Me.ChangelogToolStripMenuItem, Me.ForumToolStripMenuItem})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ÜberToolStripMenuItem, Me.ChangelogToolStripMenuItem, Me.ForumToolStripMenuItem, Me.NewsletterToolStripMenuItem})
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         '
         'ÜberToolStripMenuItem
@@ -124,6 +125,11 @@ Partial Class Form1
         'HelpProvider1
         '
         resources.ApplyResources(Me.HelpProvider1, "HelpProvider1")
+        '
+        'NewsletterToolStripMenuItem
+        '
+        resources.ApplyResources(Me.NewsletterToolStripMenuItem, "NewsletterToolStripMenuItem")
+        Me.NewsletterToolStripMenuItem.Name = "NewsletterToolStripMenuItem"
         '
         'Form1
         '
@@ -158,4 +164,5 @@ Partial Class Form1
     Friend WithEvents ÜberToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ChangelogToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ForumToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NewsletterToolStripMenuItem As ToolStripMenuItem
 End Class

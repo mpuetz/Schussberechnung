@@ -251,4 +251,8 @@ LastLine:
     Private Sub ForumToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ForumToolStripMenuItem.Click
         Forum.ShowDialog()
     End Sub
+
+    Private Sub NewsletterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewsletterToolStripMenuItem.Click
+        Newsletter.ShowDialog()
+    End Sub
 End Class
