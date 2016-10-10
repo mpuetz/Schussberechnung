@@ -148,7 +148,7 @@
     <value>Sie werden nun auf eine Internetseite weitergeleitet, auf welcher Sie die Anleitung zu diesem Programm finden.</value>
   </data>
   <data name="strNotValid" xml:space="preserve">
-    <value>Sie haben keinen gültigen Wert eingegeben. WollenSie das Programm beenden?</value>
+    <value>Sie haben keinen gültigen Wert eingegeben. Wollen Sie das Programm beenden?</value>
   </data>
   <data name="strTitleNotValid" xml:space="preserve">
     <value>Beenden?</value>
