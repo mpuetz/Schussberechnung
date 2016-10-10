@@ -143,9 +143,6 @@
   <data name="NewFileToolStripMenuItem.Text" xml:space="preserve">
     <value>New File</value>
   </data>
-  <data name="Export.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 24</value>
-  </data>
   <data name="ExportDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>181, 26</value>
   </data>
@@ -189,9 +186,6 @@
   <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>194, 74</value>
   </data>
-  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 24</value>
-  </data>
   <data name="Button1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -201,11 +195,11 @@
   <data name="Button1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;Export.Name" xml:space="preserve">
     <value>Export</value>
+  </data>
+  <data name="&gt;&gt;DateiLöschenToolStripMenuItem.Name" xml:space="preserve">
+    <value>DateiLöschenToolStripMenuItem</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
@@ -246,6 +240,9 @@
   <data name="&gt;&gt;Label1.Name" xml:space="preserve">
     <value>Label1</value>
   </data>
+  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="Button1.Text" xml:space="preserve">
     <value>Reset</value>
   </data>
@@ -278,6 +275,9 @@
   </data>
   <data name="&gt;&gt;NewsletterToolStripMenuItem.Name" xml:space="preserve">
     <value>NewsletterToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ÜberToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CheckBox1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -318,8 +318,8 @@
   <data name="CheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;Button1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="Export.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 24</value>
   </data>
   <data name="ÜberToolStripMenuItem.Text" xml:space="preserve">
     <value>A&amp;bout...</value>
@@ -339,8 +339,8 @@
   <data name="&gt;&gt;ForumToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DateiLöschenToolStripMenuItem.Name" xml:space="preserve">
-    <value>DateiLöschenToolStripMenuItem</value>
+  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 24</value>
   </data>
   <data name="&gt;&gt;ReportABugToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -475,8 +475,8 @@
   <data name="Label1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
     <value>AssociateIndex</value>
   </data>
-  <data name="&gt;&gt;ÜberToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;DatenExportierenToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
