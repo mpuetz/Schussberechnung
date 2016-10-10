@@ -28,14 +28,19 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.Export = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExportDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportABugToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ÜberToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangelogToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ForumToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
         Me.NewsletterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HelpProvider1 = New System.Windows.Forms.HelpProvider()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -87,9 +92,31 @@ Partial Class Form1
         Me.HelpProvider1.SetHelpNavigator(Me.MenuStrip1, CType(resources.GetObject("MenuStrip1.HelpNavigator"), System.Windows.Forms.HelpNavigator))
         Me.HelpProvider1.SetHelpString(Me.MenuStrip1, resources.GetString("MenuStrip1.HelpString"))
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpToolStripMenuItem, Me.ReportABugToolStripMenuItem, Me.ToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Export, Me.HelpToolStripMenuItem, Me.ReportABugToolStripMenuItem, Me.ToolStripMenuItem1})
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.HelpProvider1.SetShowHelp(Me.MenuStrip1, CType(resources.GetObject("MenuStrip1.ShowHelp"), Boolean))
+        '
+        'Export
+        '
+        resources.ApplyResources(Me.Export, "Export")
+        Me.Export.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExportDataToolStripMenuItem, Me.NewFileToolStripMenuItem, Me.DeleteFileToolStripMenuItem})
+        Me.Export.Name = "Export"
+        '
+        'ExportDataToolStripMenuItem
+        '
+        resources.ApplyResources(Me.ExportDataToolStripMenuItem, "ExportDataToolStripMenuItem")
+        Me.ExportDataToolStripMenuItem.CheckOnClick = True
+        Me.ExportDataToolStripMenuItem.Name = "ExportDataToolStripMenuItem"
+        '
+        'NewFileToolStripMenuItem
+        '
+        resources.ApplyResources(Me.NewFileToolStripMenuItem, "NewFileToolStripMenuItem")
+        Me.NewFileToolStripMenuItem.Name = "NewFileToolStripMenuItem"
+        '
+        'DeleteFileToolStripMenuItem
+        '
+        resources.ApplyResources(Me.DeleteFileToolStripMenuItem, "DeleteFileToolStripMenuItem")
+        Me.DeleteFileToolStripMenuItem.Name = "DeleteFileToolStripMenuItem"
         '
         'HelpToolStripMenuItem
         '
@@ -122,14 +149,18 @@ Partial Class Form1
         resources.ApplyResources(Me.ForumToolStripMenuItem, "ForumToolStripMenuItem")
         Me.ForumToolStripMenuItem.Name = "ForumToolStripMenuItem"
         '
-        'HelpProvider1
-        '
-        resources.ApplyResources(Me.HelpProvider1, "HelpProvider1")
-        '
         'NewsletterToolStripMenuItem
         '
         resources.ApplyResources(Me.NewsletterToolStripMenuItem, "NewsletterToolStripMenuItem")
         Me.NewsletterToolStripMenuItem.Name = "NewsletterToolStripMenuItem"
+        '
+        'HelpProvider1
+        '
+        resources.ApplyResources(Me.HelpProvider1, "HelpProvider1")
+        '
+        'SaveFileDialog1
+        '
+        resources.ApplyResources(Me.SaveFileDialog1, "SaveFileDialog1")
         '
         'Form1
         '
@@ -165,4 +196,9 @@ Partial Class Form1
     Friend WithEvents ChangelogToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ForumToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NewsletterToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Export As ToolStripMenuItem
+    Friend WithEvents ExportDataToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NewFileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeleteFileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class

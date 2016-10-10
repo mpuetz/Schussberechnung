@@ -23,6 +23,11 @@ Imports System.Threading
 Imports System.Resources
 
 Public Class Form1
+    Private FilePath As String
+    Private SaveXString As String
+    Private SaveYString As String
+    Private SaveXCount As Long
+    Private SaveYCount As Long
     Private x As Double
     Private y As Double
     Private mwx As Double
@@ -164,6 +169,30 @@ Line2:
         ' the results are divided by the count of shots and the result is shown in the TextBox.
         result = result / c
         TBErg.Text = result
+
+        If ExportDataToolStripMenuItem.Checked = True Then
+            For count As Integer = 1 To c
+                SaveXCount = SaveXCount + 1
+                SaveYCount = SaveYCount + 1
+                SaveXString = SaveXString & "X" & SaveXCount & ";"
+                SaveYString = SaveYString & "Y" & SaveYCount & ";"
+            Next
+            My.Computer.FileSystem.WriteAllText(FilePath, SaveXString & SaveYString & vbCrLf, True)
+            SaveXString = ""
+            SaveYString = ""
+            SaveXCount = 0
+            SaveYCount = 0
+            For count As Integer = 1 To c
+                x = CSettings.Load("x" & count, Application.StartupPath & "\Berechnung.txt")
+                y = CSettings.Load("y" & count, Application.StartupPath & "\Berechnung.txt")
+                SaveXString = SaveXString & x & ";"
+                SaveYString = SaveYString & y & ";"
+            Next
+            My.Computer.FileSystem.WriteAllText(FilePath, SaveXString & SaveYString & vbCrLf, True)
+            My.Computer.FileSystem.WriteAllText(FilePath, "Result:;" & result & vbCrLf & vbCrLf & vbCrLf, True)
+            SaveXString = ""
+            SaveYString = ""
+        End If
 LastLine:
     End Sub
 
@@ -254,5 +283,104 @@ LastLine:
 
     Private Sub NewsletterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewsletterToolStripMenuItem.Click
         Newsletter.ShowDialog()
+    End Sub
+
+    Private Sub ExportDataToolStripMenuItem_CheckStateChanged(sender As Object, e As EventArgs) Handles ExportDataToolStripMenuItem.CheckStateChanged
+        If ExportDataToolStripMenuItem.Checked = True Then
+            Dim SaveFileDialog1 As New SaveFileDialog
+            SaveFileDialog1.Filter = "Datatable | *.csv"
+            SaveFileDialog1.Title = LocRM.GetString("strChosePath")
+            SaveFileDialog1.ShowDialog()
+            FilePath = SaveFileDialog1.FileName
+            If IO.File.Exists(FilePath) Then
+                IO.File.Delete(FilePath)
+            End If
+            If Not result = 0 And FilePath IsNot "" Then
+                For count As Integer = 1 To c
+                    SaveXCount = SaveXCount + 1
+                    SaveYCount = SaveYCount + 1
+                    SaveXString = SaveXString & "X" & SaveXCount & ";"
+                    SaveYString = SaveYString & "Y" & SaveYCount & ";"
+                Next
+                My.Computer.FileSystem.WriteAllText(FilePath, SaveXString & SaveYString & vbCrLf, False)
+                SaveXString = ""
+                SaveYString = ""
+                SaveXCount = 0
+                SaveYCount = 0
+                For count As Integer = 1 To c
+                    x = CSettings.Load("x" & count, Application.StartupPath & "\Berechnung.txt")
+                    y = CSettings.Load("y" & count, Application.StartupPath & "\Berechnung.txt")
+                    SaveXString = SaveXString & x & ";"
+                    SaveYString = SaveYString & y & ";"
+                Next
+                My.Computer.FileSystem.WriteAllText(FilePath, SaveXString & SaveYString & vbCrLf, True)
+                My.Computer.FileSystem.WriteAllText(FilePath, "Result:;" & result & vbCrLf & vbCrLf & vbCrLf, True)
+                SaveXString = ""
+                SaveYString = ""
+            End If
+        End If
+        If FilePath = "" Then
+            ExportDataToolStripMenuItem.CheckState = CheckState.Unchecked
+        End If
+    End Sub
+
+    Private Sub DeleteFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteFileToolStripMenuItem.Click
+        If Not FilePath = "" Then
+            Dim mbdel As String
+            mbdel = MsgBox(LocRM.GetString("strDeleteTitle"), MsgBoxStyle.OkCancel, LocRM.GetString("strSure")).ToString
+            If mbdel = "Ok" Then
+                If IO.File.Exists(FilePath) Then
+                    IO.File.Delete(FilePath)
+                End If
+            End If
+        End If
+    End Sub
+
+    Private Sub NewFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewFileToolStripMenuItem.Click
+        If ExportDataToolStripMenuItem.Checked = True Then
+            Dim SaveFileDialog1 As New SaveFileDialog
+            SaveFileDialog1.Filter = "Datatable | *.csv"
+            SaveFileDialog1.Title = LocRM.GetString("strChosePath")
+            SaveFileDialog1.ShowDialog()
+            FilePath = SaveFileDialog1.FileName
+            If IO.File.Exists(FilePath) Then
+                IO.File.Delete(FilePath)
+            End If
+            If Not result = 0 And FilePath IsNot "" Then
+                For count As Integer = 1 To c
+                    SaveXCount = SaveXCount + 1
+                    SaveYCount = SaveYCount + 1
+                    SaveXString = SaveXString & "X" & SaveXCount & ";"
+                    SaveYString = SaveYString & "Y" & SaveYCount & ";"
+                Next
+                My.Computer.FileSystem.WriteAllText(FilePath, SaveXString & SaveYString & vbCrLf, False)
+                SaveXString = ""
+                SaveYString = ""
+                SaveXCount = 0
+                SaveYCount = 0
+                For count As Integer = 1 To c
+                    x = CSettings.Load("x" & count, Application.StartupPath & "\Berechnung.txt")
+                    y = CSettings.Load("y" & count, Application.StartupPath & "\Berechnung.txt")
+                    SaveXString = SaveXString & x & ";"
+                    SaveYString = SaveYString & y & ";"
+                Next
+                My.Computer.FileSystem.WriteAllText(FilePath, SaveXString & SaveYString & vbCrLf, True)
+                My.Computer.FileSystem.WriteAllText(FilePath, "Result:;" & result & vbCrLf & vbCrLf & vbCrLf, True)
+                SaveXString = ""
+                SaveYString = ""
+            End If
+            If FilePath = "" Then
+                ExportDataToolStripMenuItem.CheckState = CheckState.Unchecked
+            End If
+        Else
+            Dim SaveFileDialog1 As New SaveFileDialog
+            SaveFileDialog1.Filter = "Datatable | *.csv"
+            SaveFileDialog1.Title = LocRM.GetString("strChosePath")
+            SaveFileDialog1.ShowDialog()
+            FilePath = SaveFileDialog1.FileName
+            If IO.File.Exists(FilePath) Then
+                IO.File.Delete(FilePath)
+            End If
+        End If
     End Sub
 End Class

@@ -125,14 +125,8 @@
   <data name="TBErg.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 50</value>
   </data>
-  <data name="TBErg.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
   <data name="TBErg.Size" type="System.Drawing.Size, System.Drawing">
     <value>304, 22</value>
-  </data>
-  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 30</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 17</value>
@@ -149,17 +143,11 @@
   <data name="Button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 110</value>
   </data>
-  <data name="Button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
   <data name="Button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>334, 28</value>
   </data>
   <data name="CheckBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 78</value>
-  </data>
-  <data name="CheckBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
   </data>
   <data name="CheckBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 21</value>
@@ -167,8 +155,29 @@
   <data name="CheckBox1.Text" xml:space="preserve">
     <value>Schusszahl beibehalten</value>
   </data>
-  <data name="HelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 24</value>
+  <data name="ExportDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 26</value>
+  </data>
+  <data name="ExportDataToolStripMenuItem.Text" xml:space="preserve">
+    <value>Daten Exportieren</value>
+  </data>
+  <data name="NewFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 26</value>
+  </data>
+  <data name="NewFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Neue Datei anlegen</value>
+  </data>
+  <data name="DeleteFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 26</value>
+  </data>
+  <data name="DeleteFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Datei löschen</value>
+  </data>
+  <data name="Export.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 24</value>
+  </data>
+  <data name="Export.Text" xml:space="preserve">
+    <value>&amp;Exportieren</value>
   </data>
   <data name="HelpToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Hilfe</value>
@@ -179,32 +188,14 @@
   <data name="ReportABugToolStripMenuItem.Text" xml:space="preserve">
     <value>Fehle&amp;r melden</value>
   </data>
-  <data name="ÜberToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 28</value>
   </data>
   <data name="ÜberToolStripMenuItem.Text" xml:space="preserve">
     <value>Ü&amp;ber...</value>
   </data>
-  <data name="ChangelogToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
-  </data>
-  <data name="ForumToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 26</value>
-  </data>
   <data name="NewsletterToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Newsletter</value>
-  </data>
-  <data name="ToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 24</value>
-  </data>
-  <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 2, 0, 2</value>
-  </data>
-  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>334, 28</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>334, 138</value>
@@ -284,9 +275,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
