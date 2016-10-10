@@ -23,6 +23,7 @@ Imports System.Threading
 Imports System.Resources
 
 Public Class Form1
+    Private FilePath As String
     Private x As Double
     Private y As Double
     Private mwx As Double
@@ -254,5 +255,22 @@ LastLine:
 
     Private Sub NewsletterToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewsletterToolStripMenuItem.Click
         Newsletter.ShowDialog()
+    End Sub
+
+    Private Sub ExportDataToolStripMenuItem_CheckStateChanged(sender As Object, e As EventArgs) Handles ExportDataToolStripMenuItem.CheckStateChanged
+        If ExportDataToolStripMenuItem.Checked = True Then
+            Dim SaveFileDialog1 As New SaveFileDialog
+            SaveFileDialog1.Filter = "Datatable | *.csv"
+            SaveFileDialog1.Title = "Choose the path"
+            SaveFileDialog1.ShowDialog()
+            FilePath = SaveFileDialog1.FileName
+            If IO.File.Exists(FilePath) Then
+                IO.File.Delete(FilePath)
+            End If
+            My.Computer.FileSystem.WriteAllText(FilePath, "blabla;blabla" & vbCrLf, False)
+            My.Computer.FileSystem.WriteAllText(FilePath, "test;test", True)
+        Else
+            FilePath = ""
+        End If
     End Sub
 End Class
