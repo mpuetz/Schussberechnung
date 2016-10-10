@@ -129,6 +129,12 @@
   <data name="strChangelog" xml:space="preserve">
     <value>Sie werden nun auf eine Internetseite weitergeleitet, auf welcher Sie das Changelog einsehen können.</value>
   </data>
+  <data name="strChosePath" xml:space="preserve">
+    <value>Wählen Sie den Pfad aus!</value>
+  </data>
+  <data name="strDeleteTitle" xml:space="preserve">
+    <value>Sind Sie sich sicher?</value>
+  </data>
   <data name="strEnterShots" xml:space="preserve">
     <value>Bitte geben Sie die Anzahl der Schüsse ein.</value>
   </data>
@@ -149,6 +155,9 @@
   </data>
   <data name="strNotValid" xml:space="preserve">
     <value>Sie haben keinen gültigen Wert eingegeben. Wollen Sie das Programm beenden?</value>
+  </data>
+  <data name="strSure" xml:space="preserve">
+    <value>Wollen Sie die Datei wirklich löschen?</value>
   </data>
   <data name="strTitleNotValid" xml:space="preserve">
     <value>Beenden?</value>

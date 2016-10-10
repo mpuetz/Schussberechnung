@@ -129,6 +129,12 @@
   <data name="strChangelog" xml:space="preserve">
     <value>A website will be loaded showing the latest changes made to this program.</value>
   </data>
+  <data name="strChosePath" xml:space="preserve">
+    <value>Please choose the Path for the file.</value>
+  </data>
+  <data name="strDeleteTitle" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
   <data name="strEnterShots" xml:space="preserve">
     <value>Please enter the number of shots</value>
   </data>
@@ -149,6 +155,9 @@
   </data>
   <data name="strNotValid" xml:space="preserve">
     <value>You have not entered a valid number. Would you like to quit the program?</value>
+  </data>
+  <data name="strSure" xml:space="preserve">
+    <value>Do you really want to delete this file?</value>
   </data>
   <data name="strTitleNotValid" xml:space="preserve">
     <value>Quit?</value>

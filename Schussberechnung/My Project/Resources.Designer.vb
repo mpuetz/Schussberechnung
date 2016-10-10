@@ -97,6 +97,24 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Please choose the Path for the file. ähnelt.
+        '''</summary>
+        Friend ReadOnly Property strChosePath() As String
+            Get
+                Return ResourceManager.GetString("strChosePath", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Are you sure? ähnelt.
+        '''</summary>
+        Friend ReadOnly Property strDeleteTitle() As String
+            Get
+                Return ResourceManager.GetString("strDeleteTitle", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Sucht eine lokalisierte Zeichenfolge, die Please enter the number of shots ähnelt.
         '''</summary>
         Friend ReadOnly Property strEnterShots() As String
@@ -156,6 +174,15 @@ Namespace My.Resources
         Friend ReadOnly Property strNotValid() As String
             Get
                 Return ResourceManager.GetString("strNotValid", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Do you really want to delete this file? ähnelt.
+        '''</summary>
+        Friend ReadOnly Property strSure() As String
+            Get
+                Return ResourceManager.GetString("strSure", resourceCulture)
             End Get
         End Property
         

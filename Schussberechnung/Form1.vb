@@ -289,7 +289,7 @@ LastLine:
         If ExportDataToolStripMenuItem.Checked = True Then
             Dim SaveFileDialog1 As New SaveFileDialog
             SaveFileDialog1.Filter = "Datatable | *.csv"
-            SaveFileDialog1.Title = "Choose the path"
+            SaveFileDialog1.Title = LocRM.GetString("strChosePath")
             SaveFileDialog1.ShowDialog()
             FilePath = SaveFileDialog1.FileName
             If IO.File.Exists(FilePath) Then
@@ -325,11 +325,13 @@ LastLine:
     End Sub
 
     Private Sub DeleteFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteFileToolStripMenuItem.Click
-        Dim mbdel As String
-        mbdel = MsgBox("Wirklich löschen?", MsgBoxStyle.OkCancel, "Are you sure?").ToString
-        If mbdel = "Ok" And FilePath IsNot "" Then
-            If IO.File.Exists(FilePath) Then
-                IO.File.Delete(FilePath)
+        If Not FilePath = "" Then
+            Dim mbdel As String
+            mbdel = MsgBox(LocRM.GetString("strDeleteTitle"), MsgBoxStyle.OkCancel, LocRM.GetString("strSure")).ToString
+            If mbdel = "Ok" Then
+                If IO.File.Exists(FilePath) Then
+                    IO.File.Delete(FilePath)
+                End If
             End If
         End If
     End Sub
@@ -338,7 +340,7 @@ LastLine:
         If ExportDataToolStripMenuItem.Checked = True Then
             Dim SaveFileDialog1 As New SaveFileDialog
             SaveFileDialog1.Filter = "Datatable | *.csv"
-            SaveFileDialog1.Title = "Choose the path"
+            SaveFileDialog1.Title = LocRM.GetString("strChosePath")
             SaveFileDialog1.ShowDialog()
             FilePath = SaveFileDialog1.FileName
             If IO.File.Exists(FilePath) Then
@@ -373,7 +375,7 @@ LastLine:
         Else
             Dim SaveFileDialog1 As New SaveFileDialog
             SaveFileDialog1.Filter = "Datatable | *.csv"
-            SaveFileDialog1.Title = "Choose the path"
+            SaveFileDialog1.Title = LocRM.GetString("strChosePath")
             SaveFileDialog1.ShowDialog()
             FilePath = SaveFileDialog1.FileName
             If IO.File.Exists(FilePath) Then
