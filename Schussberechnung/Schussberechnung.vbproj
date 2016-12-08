@@ -138,6 +138,7 @@
     <Compile Include="Changelog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FileOperator.vb" />
     <Compile Include="Forum.Designer.vb">
       <DependentUpon>Forum.vb</DependentUpon>
     </Compile>
@@ -156,7 +157,6 @@
     <Compile Include="BugReport.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CSettings.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
