@@ -17,9 +17,6 @@
 
 '____________________________________________________________________________
 
-Imports System.ComponentModel
-Imports System.Globalization
-Imports System.Threading
 Imports System.Resources
 
 Public Class Form1
@@ -114,7 +111,7 @@ Line1:
                 If Not IsNumeric(cs.ToString) Then
                     MsgBox(LocRM.GetString("NumericInputOnly"), MsgBoxStyle.Exclamation, LocRM.GetString("NumericInputOnlyTitle"))
                 Else
-                    CSettings.Save("x" & i, cs, Application.StartupPath & "\Berechnung.txt")
+                    FileOperator.Save(Application.StartupPath & "\Berechnung.txt", "x" & i, cs)
                 End If
             End If
         Next
@@ -135,21 +132,21 @@ Line2:
                 If Not IsNumeric(cs.ToString) Then
                     MsgBox(LocRM.GetString("NumericInputOnly"), MsgBoxStyle.Exclamation, LocRM.GetString("NumericInputOnlyTitle"))
                 Else
-                    CSettings.Save("y" & i, cs, Application.StartupPath & "\Berechnung.txt")
+                    FileOperator.Save(Application.StartupPath & "\Berechnung.txt", "y" & i, cs)
                 End If
             End If
         Next
 
         ' starts a loop to add each x-value to mwx and divide it by the count of shots
         For count As Integer = 1 To c
-            x = CSettings.Load("x" & count, Application.StartupPath & "\Berechnung.txt")
+            x = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "x" & count)
             mwx = mwx + x
         Next
         mwx = mwx / c
 
         ' starts a loop to add each y-value to mwy and divide it by the count of shots
         For count As Integer = 1 To c
-            y = CSettings.Load("y" & count, Application.StartupPath & "\Berechnung.txt")
+            y = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "y" & count)
             mwy = mwy + y
         Next
         mwy = mwy / c
@@ -157,8 +154,8 @@ Line2:
         ' starts a loop which substracts the average values form x and y, squares them, adds the result for x and y
         ' and builds the squareroot of this result. Now the results are added.
         For i = 1 To c
-            x = CSettings.Load("x" & i, Application.StartupPath & "\Berechnung.txt")
-            y = CSettings.Load("y" & i, Application.StartupPath & "\Berechnung.txt")
+            x = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "x" & i)
+            y = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "y" & i)
             xpart = (x - mwx)
             xpart = xpart * xpart
             ypart = (y - mwy)
@@ -183,8 +180,8 @@ Line2:
             SaveXCount = 0
             SaveYCount = 0
             For count As Integer = 1 To c
-                x = CSettings.Load("x" & count, Application.StartupPath & "\Berechnung.txt")
-                y = CSettings.Load("y" & count, Application.StartupPath & "\Berechnung.txt")
+                x = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "x" & count)
+                y = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "y" & count)
                 SaveXString = SaveXString & x & ";"
                 SaveYString = SaveYString & y & ";"
             Next
@@ -308,8 +305,8 @@ LastLine:
                 SaveXCount = 0
                 SaveYCount = 0
                 For count As Integer = 1 To c
-                    x = CSettings.Load("x" & count, Application.StartupPath & "\Berechnung.txt")
-                    y = CSettings.Load("y" & count, Application.StartupPath & "\Berechnung.txt")
+                    x = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "x" & count)
+                    y = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "y" & count)
                     SaveXString = SaveXString & x & ";"
                     SaveYString = SaveYString & y & ";"
                 Next
@@ -359,8 +356,8 @@ LastLine:
                 SaveXCount = 0
                 SaveYCount = 0
                 For count As Integer = 1 To c
-                    x = CSettings.Load("x" & count, Application.StartupPath & "\Berechnung.txt")
-                    y = CSettings.Load("y" & count, Application.StartupPath & "\Berechnung.txt")
+                    x = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "x" & count)
+                    y = FileOperator.Load(Application.StartupPath & "\Berechnung.txt", "y" & count)
                     SaveXString = SaveXString & x & ";"
                     SaveYString = SaveYString & y & ";"
                 Next
