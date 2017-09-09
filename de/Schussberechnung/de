@@ -117,58 +117,81 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="NumericInputOnly" xml:space="preserve">
-    <value>Bitte achten Sie darauf, dass nur Zahlen erlaubt sind!</value>
-  </data>
-  <data name="NumericInputOnlyTitle" xml:space="preserve">
-    <value>Nur Zahlen erlaubt!</value>
-  </data>
-  <data name="strBugReport" xml:space="preserve">
-    <value>Sie werden nun auf eine Internetseite weitergeleitet, auf welcher Sie den Fehler melden können. Sollten Sie noch keinen Account erstellt haben können Sie dies hier ebenfalls tun. Klicken Sie hierfür auf 'Signup for a new account', ansonsten wählen Sie bitte 'Login' aus. Wählen Sie nach dem Anmelden oben rechts das Projekt 'Schussberechnung' aus. Vielen Dank für Ihre Mithilfe!</value>
-  </data>
-  <data name="strChangelog" xml:space="preserve">
-    <value>Sie werden nun auf eine Internetseite weitergeleitet, auf welcher Sie das Changelog einsehen können.</value>
-  </data>
-  <data name="strChosePath" xml:space="preserve">
-    <value>Wählen Sie den Pfad aus!</value>
-  </data>
-  <data name="strDeleteTitle" xml:space="preserve">
-    <value>Sind Sie sich sicher?</value>
-  </data>
-  <data name="strEnterShots" xml:space="preserve">
-    <value>Bitte geben Sie die Anzahl der Schüsse ein.</value>
-  </data>
-  <data name="strEnterXPart1" xml:space="preserve">
-    <value>Bitte geben Sie die x</value>
-  </data>
-  <data name="strEnterXPart2" xml:space="preserve">
-    <value>-Koordinaten ein.</value>
-  </data>
-  <data name="strEnterYPart1" xml:space="preserve">
-    <value>Bitte geben Sie die y</value>
-  </data>
-  <data name="strEnterYPart2" xml:space="preserve">
-    <value>-Koordinaten ein.</value>
-  </data>
-  <data name="strHelp" xml:space="preserve">
-    <value>Sie werden nun auf eine Internetseite weitergeleitet, auf welcher Sie die Anleitung zu diesem Programm finden.</value>
-  </data>
-  <data name="strNotValid" xml:space="preserve">
-    <value>Sie haben keinen gültigen Wert eingegeben. Wollen Sie das Programm beenden?</value>
-  </data>
-  <data name="strSure" xml:space="preserve">
-    <value>Wollen Sie die Datei wirklich löschen?</value>
-  </data>
-  <data name="strTitleNotValid" xml:space="preserve">
-    <value>Beenden?</value>
-  </data>
-  <data name="strTitleShots" xml:space="preserve">
-    <value>Anzahl Schüsse</value>
-  </data>
-  <data name="strTitleX" xml:space="preserve">
-    <value>Abfrage_x</value>
-  </data>
-  <data name="strTitleY" xml:space="preserve">
-    <value>Abfrage_y</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAD29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b2
+        9v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b2
+        9v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b2
+        9v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b2
+        9v/29vb/9vb2//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv
+        8P/x7/D/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JC
+        Qv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/9vb2//b29v9CQkL/QkJC//Hv
+        8P/x7/D/8e/w//Hv8P9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv
+        8P/x7/D/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/9vb2//b29v/29vb/9vb2/0JC
+        Qv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC//Hv
+        8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv/29vb/9vb2//b2
+        9v/29vb/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JC
+        Qv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b2
+        9v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv
+        8P9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JC
+        Qv9CQkL/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv
+        8P/x7/D/8e/w/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv
+        8P/x7/D/QkJC/0JCQv/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC//Hv
+        8P/x7/D/8e/w//Hv8P9CQkL/QkJC//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JC
+        Qv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv
+        8P9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv/29vb/9vb2//b29v/29vb/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/8e/w//Hv
+        8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b2
+        9v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JC
+        Qv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b2
+        9v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JC
+        Qv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv
+        8P/x7/D/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//Hv8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv
+        8P/x7/D/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//Hv
+        8P/x7/D/8e/w//Hv8P9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b2
+        9v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/8e/w//Hv8P/x7/D/8e/w/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b2
+        9v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv/x7/D/8e/w//Hv8P/x7/D/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b29v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b29v/29vb/9vb2/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv/29vb/9vb2//b29v/29vb/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC//b29v/29vb/9vb2//b2
+        9v9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JC
+        Qv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/QkJC/0JCQv9CQkL/9vb2//b2
+        9v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b2
+        9v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b2
+        9v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b2
+        9v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b29v/29vb/9vb2//b2
+        9v/29vb/9vb2//b29v/29vb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
   </data>
 </root>
