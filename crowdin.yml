@@ -1,5 +1,0 @@
-files:
-  - source: /Schussberechnung/*.resx
-    ignore:
-      - /Schussberechnung/*.*.resx
-    translation: '%original_path%/%two_letters_code%/'
