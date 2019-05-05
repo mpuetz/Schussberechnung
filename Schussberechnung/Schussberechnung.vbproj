@@ -84,11 +84,10 @@
     <ApplicationIcon>Schussberechnung.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>5D2A01F39F2189E017C94FACECDF07C14E2AA154</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>A97F979F77A61A331F3248E5B542910DE97B9D56</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>Schussberechnung_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -274,6 +273,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Schussberechnung_1_TemporaryKey.pfx" />
     <None Include="Schussberechnung_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
